@@ -1,0 +1,68 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Erstelle eine Datei in deinem neuen Repository, füge etwas zu dieser Datei hinzu und committe diese Änderung mit Git.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Commits</h2>
+    <p>Commits sind das Herzstück der Git-Nutzung. Sie sind die Momente, in denen du deine geleistete Arbeit speicherst und beschreibst. Sie sind
+        die Markierungen in der Zeitleiste der Geschichte deines Projekts.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Eine neue Datei erstellen</h3>
+    <p>Jetzt, da du ein Repository gestartet hast, lass uns eine Datei hinzufügen.</p>
+    <p>Öffne deinen Texteditor und erstelle eine neue leere Datei. Schreibe jetzt ein wenig Text, vielleicht tippe "Hallo!", und
+        speichere die Datei als 'readme.txt' im 'hello-world' Ordner, den du in der letzten Challenge erstellt hast.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Status prüfen + Änderungen hinzufügen und committen</h3>
+    <p>Prüfe als nächstes den <strong>Status</strong> deines Repositories, um herauszufinden, ob es Änderungen gegeben hat. Du weißt, dass du
+        etwas geändert hast, aber weiß Git das?</p>
+
+    <p>Stelle sicher, dass du dich noch in deinem 'hello-world' Verzeichnis befindest, wenn du diese Befehle ausführst. Verwende Git, um zu sehen,
+        was sich in deinem Repository geändert hat:</p>
+
+    <p>Zuerst, prüfe den Status:</p>
+    <p><code class="shell">git status</code></p>
+    <p>Git sollte dir sagen, dass eine Datei hinzugefügt wurde.</p>
+
+    <p>Dann <strong>füge</strong> die Datei, die du gerade erstellt hast, hinzu, damit sie Teil der Änderungen wird, die du <strong>committen</strong>
+        (auch bekannt als speichern) wirst:</p>
+    <p><code class="shell">git add readme.txt</code></p>
+
+    <p>Schließlich <strong>committe</strong> diese Änderungen zur Geschichte des Repositories mit einer
+        kurzen (m) Nachricht, die die Updates beschreibt.</p>
+    <p><code class="shell">git commit -m "Created readme"</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Schritt: Weitere Änderungen vornehmen</h3>
+    <p>Füge jetzt eine weitere Zeile zu 'readme.txt' hinzu und speichere die Datei erneut.</p>
+
+    <p>Im Terminal kannst du die <strong>Diff</strong>erenz zwischen der Datei jetzt und wie sie bei deinem letzten
+        Commit war, anzeigen.</p>
+
+    <p>Sage Git, dir den <strong>Diff</strong> zu zeigen:</p>
+    <p><code class="shell">git diff</code></p>
+
+    <p>Jetzt mit dem, was du gerade oben gelernt hast, committe diese neueste Änderung.</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Status von Änderungen an einem Repository prüfen</strong></li>
+        <li><code class="shell">git status</code></li>
+        <li><strong>Änderungen an Dateien anzeigen</strong></li>
+        <li><code class="shell">git diff</code></li>
+        <li><strong>Änderungen einer Datei zum Committen hinzufügen</strong></li>
+        <li><code class="shell">git add &#60;FILENAME&#62;</code></li>
+        <li><strong>Um alle Dateiänderungen hinzuzufügen</strong></li>
+        <li><code class="shell">git add .</code></li>
+        <li><strong>Um die hinzugefügten Änderungen zu committen (auch bekannt als speichern) mit einer kurzen Nachricht, die die Änderungen beschreibt</strong>
+        </li>
+        <li><code class="shell">git commit -m "deine commit nachricht"</code></li>
+        <ul>
+</div>

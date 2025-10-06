@@ -1,0 +1,39 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Halte deine Datei auf dem neuesten Stand, indem du Änderungen von Kollaborateuren einholst.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h3>Pullen von einem Remote</h3>
+    <p>Wenn du an etwas mit jemand anderem arbeitest, musst du mit den neuesten Änderungen auf dem Laufenden bleiben. Du wirst
+        also <strong>pullen</strong> wollen, um alle Änderungen einzuholen, die möglicherweise zum zentralen GitHub-Repository gepusht wurden.</p>
+
+    <img src="../../../assets/imgs/pull.png"
+         alt="Ein Diagramm zeigt einen Computer, der Informationen von der Website eines Repositories herunterzieht" width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Was hat Reporobot gemacht?</h3>
+    <p>Sieh, ob Reporobot Änderungen an deinem Branch gemacht hat, indem du alle Änderungen vom Remote namens 'origin' auf
+        GitHub einholst:</p>
+
+    <p><code class="shell">git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code></p>
+
+    <p>Wenn sich nichts geändert hat, wird es dir 'Already up-to-date' sagen. Wenn es Änderungen gibt, wird Git diese Änderungen
+        in deine lokale Version mergen.</p>
+
+    <p>Hat Reporobot Änderungen gemacht? Git sagt dir, wo Änderungen gemacht wurden. Du kannst diese Datei öffnen und Reporobots
+        Updates sehen. Überraschung, Reporobot ist ein Künstler!</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Git-Status überprüfen</strong></li>
+        <code class="shell">git status</code>
+        <li><strong>Änderungen von einem Remote-Branch einholen</strong></li>
+        <code class="shell">git pull &lt;REMOTENAME&gt; &lt;REMOTEBRANCH&gt;</code>
+        <li><strong>Änderungen am Remote sehen, bevor du sie einholst</strong></li>
+        <code class="shell">git fetch --dry-run</code>
+    </ul>
+</div>

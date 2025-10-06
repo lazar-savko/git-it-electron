@@ -60,12 +60,12 @@ h1, h2, h3, h4, .toc {
 }
 
 a {
-  color: #0087ff;
+  color: #00a86b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4BABFF;
+  color: #4dd1a3;
 }
 
 p {
@@ -172,7 +172,7 @@ img {
   text-transform: capitalize;
   font-size: 19px;
   font-weight: 800;
-  color: #4BABFF;
+  color: #4dd1a3;
   line-height: 1;
   display: inline-block;
 }
@@ -184,7 +184,7 @@ img {
 }
 
 .filledblock:hover {
-  background: #4BABFF;
+  background: #4dd1a3;
   color: #fff;
 }
 
@@ -230,7 +230,7 @@ img {
   top: 9px;
   height: 6px;
   width: 6px;
-  border: 0.15em solid #0087ff;
+  border: 0.15em solid #00a86b;
   border-radius: 50px;
 }
 
@@ -240,8 +240,8 @@ img {
   top: 12px;
   height: 6px;
   width: 6px;
-  border: 0.15em solid #0087ff;
-  background-color: #0087ff;
+  border: 0.15em solid #00a86b;
+  background-color: #00a86b;
   border-radius: 50px;
 }
 
@@ -255,7 +255,7 @@ img {
 }
 
 .challenge-item.current {
-  background-color: #8cf;
+  background-color: #88d4aa;
   color: #0087FF;
   margin-right: -3px;
   border-color: white;
@@ -270,7 +270,7 @@ img {
 .challenge-name {
   text-transform: capitalize;
   font-weight: 900;
-  color: #0087ff;
+  color: #00a86b;
 }
 
 /* CHALLENGES
@@ -282,7 +282,7 @@ img {
 
 .chal-background {
   color: #6F879C;
-  background: rgba(136, 204, 255, 0.18);
+  background: rgba(136, 212, 170, 0.18);
   border-radius: 2px;
   padding: 3px 24px;
 }
@@ -320,7 +320,7 @@ code.shell:before {
 .blue-border-box,
 .didnt-pass,
 .challenge {
-  border: 1px solid #BADFFF;
+  border: 1px solid #bae8d9;
   padding: 18px;
   margin: 18px 0 36px;
   border-radius: 2px;
@@ -361,7 +361,7 @@ code.shell:before {
 
 .blue-border-box code {
   border: none;
-  background: rgba(136, 204, 255, 0.15);
+  background: rgba(136, 212, 170, 0.15);
 }
 
 .blue-border-box li {
@@ -378,14 +378,14 @@ code.shell:before {
 
 .challenge p {
   margin: 0;
-  color: #0087ff;
+  color: #00a86b;
 }
 
 /* VERIFY
    -------------------------------------------------------------------------- */
 
 .verify {
-  background-color: #0087ff;
+  background-color: #00a86b;
   color: #fff;
   padding: 18px;
   border-radius: 2px;
@@ -425,7 +425,7 @@ code.shell:before {
   text-align: center;
   white-space: nowrap;
   margin-left: -3px;
-  color: #8cf;
+  color: #88d4aa;
 }
 
 #path-required-warning {
@@ -503,7 +503,7 @@ button:hover {
 }
 
 button:disabled {
-  background-color: rgba(167, 164, 164, 0.68);
+  background-color: rgba(0,168,107,0.6);
 }
 
 button .octicon {
@@ -512,30 +512,30 @@ button .octicon {
 
 .btn-primary {
   margin: 9px 0;
-  background: #0087ff;
+  background: #00a86b;
   color: #fff;
   border-radius: 2px;
   text-transform: inherit;
 }
 
 .btn-secondary {
-  background: #8cf;
+  background: #88d4aa;
   color: #fff;
   border-radius: 2px;
 }
 
 .btn-white {
   background: #fff;
-  color: #0087ff;
+  color: #00a86b;
   border-radius: 2px;
 }
 
 .btn-outline {
-  border: 1px solid #8cf;
+  border: 1px solid #88d4aa;
   background: none;
   padding: 4px 13px;
   border-radius: 3px;
-  color: #0087ff;
+  color: #00a86b;
   display: inline-block;
 }
 
@@ -548,7 +548,7 @@ button .octicon {
 }
 
 .btn-primary:hover {
-  background: #057ce7;
+  background: #008a5a;
 }
 
 .btn-large {
@@ -562,38 +562,38 @@ button .octicon {
 }
 
 .border-group-left {
-  border: 1px solid #0087ff;
+  border: 1px solid #00a86b;
   border-radius: 2px 0 0 2px;
   padding: 10px 14px;
 }
 
 .border-group-middle {
-  border-top: 1px solid #0087ff;
-  border-bottom: 1px solid #0087ff;
+  border-top: 1px solid #00a86b;
+  border-bottom: 1px solid #00a86b;
   padding: 10px 14px;
   margin-left: -4px;
 }
 
 .border-group-right {
-  border: 1px solid #0087ff;
+  border: 1px solid #00a86b;
   border-radius: 0 2px 2px 0;
   padding: 10px 14px;
 }
 
 .border-group-right.btn {
-  border: 1px solid #88CCFF;
-  color: #88CCFF;
-  border-left-color: #0087FF;
+  border: 1px solid #88d4aa;
+  color: #88d4aa;
+  border-left-color: #00a86b;
 }
 
 .border-group-right.btn:hover {
-  border: 1px solid #0087ff;
-  color: #0087ff;
+  border: 1px solid #00a86b;
+  color: #00a86b;
   cursor: pointer;
 }
 
 .border-group-container {
-  color: #0087ff;
+  color: #00a86b;
   padding: 20px 0;
 }
 
@@ -613,7 +613,7 @@ button .octicon {
 .lang-select:after {
   content: "";
   border: 5px solid transparent;
-  /*border-top-color: #8cf;*/
+  /*border-top-color: #88d4aa;*/
   border-top-color: #A6A6A6;
   position: relative;
   left: 66px;
@@ -681,23 +681,23 @@ button .octicon {
    -------------------------------------------------------------------------- */
 
 .progress-circles .border-left {
-  border-left: 1px solid #0087ff;
+  border-left: 1px solid #00a86b;
 }
 
 .progress-circle {
   display: inline-block;
   width: 10px;
 	height: 10px;
-  border: 0.15em solid #0087ff;
+  border: 0.15em solid #00a86b;
 	border-radius: 50px;
 }
 
 .progress-circle.completed {
-  background: #0087ff;
+  background: #00a86b;
 }
 
 .progress-circle.completed + .progress-circle:not(.completed) {
-  background: #8cf;
+  background: #88d4aa;
   animation: blink 1s steps(2, start) infinite;
 }
 

@@ -18,7 +18,7 @@ var emptySavedDir = require('./empty-saved-dir.json')
 var mainWindow = null
 var menu = null
 
-var iconPath = path.join(__dirname, '/assets/git-it.png')
+var iconPath = path.join(__dirname, '/assets/new-icon.ico')
 
 app.on('window-all-closed', function appQuit () {
   if (process.platform !== 'darwin') {

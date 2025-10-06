@@ -1,0 +1,108 @@
+<p>Unten sind die Terminal- und Git-Befehle aufgelistet, die in den Git-it Challenges verwendet werden.</p>
+
+<h2>Bash/Terminal Grundlagen</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Einen neuen Ordner erstellen (auch bekannt als make directory)</strong></li>
+        <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
+        <li><strong>In einen bestehenden Ordner navigieren (auch bekannt als change directory)</strong></li>
+        <code class="shell">cd &#60;FOLDERNAME&#62;</code>
+        <li><strong>Die Elemente in einem Ordner auflisten</strong></li>
+        <code class="shell">ls </code>
+    </ul>
+</div>
+
+<h2>Git konfigurieren</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Git-Version überprüfen</strong></li>
+        <code>git --version</code>
+        <li><strong>Deinen Namen setzen</strong></li>
+        <code>git config --global user.name "Dein Name"</code>
+        <li><strong>Deine E-Mail setzen</strong></li>
+        <code>git config --global user.email deineemail@beispiel.com</code>
+        <li><strong>Dein GitHub-Konto setzen (case sensitive)</strong></li>
+        <code>git config --global user.username uSeRnAmE</code>
+    </ul>
+</div>
+
+<h2>Git Grundlagen</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Git für einen Ordner aktivieren</strong></li>
+        <code class="shell">git init</code>
+        <li><strong>Status von Änderungen an einem Repository überprüfen</strong></li>
+        <code class="shell">git status</code>
+        <li><strong>Änderungen an Dateien anzeigen</strong></li>
+        <code class="shell">git diff</code>
+        <li><strong>Änderungen einer Datei zum Committen hinzufügen</strong></li>
+        <code class="shell">git add &#60;FILENAME&#62;</code>
+        <li><strong>Um alle Dateiänderungen hinzuzufügen</strong></li>
+        <code class="shell">git add .</code>
+        <li><strong>Um die hinzugefügten Änderungen zu committen (auch bekannt als speichern) mit einer kurzen Nachricht, die die Änderungen beschreibt</strong>
+        </li>
+        <code class="shell">git commit -m "deine commit nachricht"</code>
+        <li><strong>Ein Repository auf deinen Computer kopieren</strong></li>
+        <code class="shell">git clone &#60;URL&#62;</code>
+    </ul>
+</div>
+
+<h2>Git Branches</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Einen neuen Branch erstellen</strong></li>
+        <code class="shell">git branch &#60;BRANCHNAME&#62;</code>
+        <li><strong>Auf einen Branch wechseln</strong></li>
+        <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
+        <li><strong>Du kannst einen Branch erstellen und in einer Zeile zu ihm wechseln</strong></li>
+        <code class="shell">git checkout -b &#60;BRANCHNAME&#62;</code>
+        <li><strong>Die Branches auflisten</strong></li>
+        <code class="shell">git branch</code>
+        <li><strong>Einen Branch umbenennen, auf dem du dich gerade befindest</strong></li>
+        <code class="shell">git branch -m &#60;NEWBRANCHNAME&#62;</code>
+    </ul>
+</div>
+
+<h2>Git Remotes</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Remote-Verbindungen hinzufügen</strong></li>
+        <code class="shell">git remote add &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+        <li><strong>Eine URL zu einem Remote setzen</strong></li>
+        <code class="shell">git remote set-url &#60;REMOTENAME&#62; &#60;URL&#62;</code>
+        <li><strong>Remote-Verbindungen anzeigen</strong></li>
+        <code class="shell">git remote -v</code>
+    </ul>
+</div>
+
+<h2>Pullen in Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Änderungen einholen</strong></li>
+        <code class="shell">git pull</code>
+        <li><strong>Änderungen von einem Remote-Branch einholen</strong></li>
+        <code class="shell">git pull &#60;REMOTENAME&#62; &#60;REMOTEBRANCH&#62;</code>
+        <li><strong>Änderungen am Remote sehen, bevor du sie einholst</strong></li>
+        <code class="shell">git fetch --dry-run</code>
+    </ul>
+</div>
+
+<h2>Push &#38; Merge in Git</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Änderungen pushen</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
+        <li><strong>Einen Branch in den aktuellen Branch mergen</strong></li>
+        <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>
+
+<h2>Remotes und Branches in Git löschen</h2>
+<div class="blue-border-box">
+    <ul class="no-list-style">
+        <li><strong>Einen lokalen Branch löschen</strong></li>
+        <code class="shell">git branch -D &#60;BRANCHNAME&#62;</code>
+        <li><strong>Einen Remote-Branch löschen</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>

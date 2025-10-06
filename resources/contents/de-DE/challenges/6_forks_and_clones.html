@@ -1,0 +1,86 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Forke ein Projekt von GitHub.com und klone es lokal.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Forks</h2>
+    <p>Bisher hast du ein Projekt lokal erstellt und zu GitHub gepusht, aber das ist nur die Hälfte des Spaßes! Die andere Hälfte ist
+        die Zusammenarbeit mit anderen Menschen und anderen Projekten.</p>
+
+    <p>Wenn du ein Repository <strong>forkst</strong>, erstellst du eine Kopie davon in deinem GitHub-Konto. Deine geforkte
+        Kopie beginnt ihr Leben als <strong>Remote</strong>-Repository—es existiert nur in deinem GitHub-Konto, nicht auf deinem
+        Computer. Forks werden verwendet, um deine eigene Version eines Projekts zu erstellen (diese Abweichung vom Original ist wie
+        einen Abzweig auf der Straße zu nehmen) oder deine Änderungen (wie Bugfixes oder neue Features) an das ursprüngliche
+        Projekt zurückzugeben.</p>
+
+    <p>Um ein geforktes Repository von deinem GitHub-Konto auf deinen Computer zu bekommen, <strong>klonst</strong> du es. Diese
+        Klon-Aktion kopiert das Remote-Repository auf deinen Computer, damit du lokal daran arbeiten kannst.</p>
+
+    <img src="../../../assets/imgs/clone.png"
+         alt="Ein Diagramm, das zeigt, wie ein Repository von GitHub in dein GitHub-Konto kopiert wird und dann von dort auf deinen lokalen Computer kopiert wird."
+         width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Das Patchwork-Repository forken</h3>
+    <p>Das Projekt, mit dem wir arbeiten werden, ist unter <a href="http://github.com/jlord/patchwork" target="_blank">github.com/jlord/patchwork</a>.
+        Gehe zu dieser Seite und klicke auf den 'Fork' Button oben rechts. Sobald die Fork-Animation abgeschlossen ist, hast du eine
+        Kopie in deinem Konto. Kopiere die HTTP-URL deines Forks aus der Adressleiste deines Browsers, das ist die Adresse
+        deines Forks auf GitHub's Servern.</p>
+    <!-- TODO write address for user here -->
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Deinen Fork lokal klonen</h3>
+    <p>Jetzt wirst du im Terminal das Repository auf deinen Computer klonen. Es wird automatisch einen neuen Ordner für
+        das Repository erstellen, daher musst du keinen selbst erstellen. Aber stelle sicher, dass du es nicht innerhalb eines anderen
+        Git-Repository-Ordners klonst!</p>
+
+    <p>Stelle also sicher, dass du dich nicht innerhalb des 'hello-world' Verzeichnisses aus den vorherigen Challenges befindest. Um zurückzugehen und diesen
+        Ordner zu verlassen, damit du klonen kannst, folge diesen Schritten:</p>
+
+    <p>Gehe aus deinem 'hello-world' Ordner zurück:<br><span class="inline-tip">Tipp: die zwei Punkte bedeuten, einen Verzeichnislevel zurückzugehen</span>
+    </p>
+    <p><code class="shell">cd ..</code></p>
+
+    <p>Jetzt, da du nicht mehr in einem anderen Git-Repository bist, klone deinen Fork:</p>
+    <p><code class="shell">git clone &#60;URLFROMGITHUB&#62;</code></p>
+
+    <p>Gehe in den Ordner, den es für deine lokale Kopie des Forks erstellt hat (in diesem Fall 'patchwork' genannt).</p>
+    <p><code class="shell">cd patchwork</code></p>
+
+    <p>Jetzt hast du eine Kopie des Repositories auf deinem Computer und es ist automatisch mit dem Remote
+        Repository (deiner geforkten Kopie) in deinem GitHub-Konto verbunden. Tippe <code>git remote -v</code>, um zu sehen, dass die Adresse zum
+        Fork bereits eingerichtet ist.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Mit dem ursprünglichen Repository verbinden</h3>
+
+    <p>Was ist, wenn sich das ursprüngliche Repository, das du geforkt hast, ändert? Du möchtest in der Lage sein, diese
+        Änderungen auch zu <strong>pullen</strong>. Lass uns also eine weitere Remote-Verbindung hinzufügen, diesmal zum ursprünglichen <a
+                href="http://github.com/jlord/patchwork" target="_blank">github.com/jlord/patchwork</a> Repository mit
+        seiner URL.</p>
+
+    <p>Du kannst diese Remote-Verbindung beliebig benennen, aber typischerweise verwenden Leute den Namen 'upstream'; lass uns
+        das hier verwenden.</p>
+
+    <p><code class="shell">git remote add upstream https://github.com/jlord/patchwork.git</code></p>
+
+    <p>Um sicherzugehen, dass du die korrekten Remotes eingerichtet hast, tippe <code>git remote -v</code>, um die Adressen aufzulisten, die du
+        gespeichert hast. <b>Du solltest ein 'origin' Remote mit der Adresse deines Forks haben und dann ein 'upstream' Remote mit
+            der Adresse zum ursprünglichen, der URL, die oben in diesem Schritt notiert ist.</b></p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Ein Remote hinzufügen</strong></li>
+        <li><code class="shell">git remote add &#60;REMOTENAME&#62; &#60;URL&#62;</code></li>
+        <li><strong>Eine Remote-URL ändern</strong></li>
+        <li><code class="shell">git remote set-url &#60;REMOTENAME&#62; &#60;URL&#62;</code></li>
+        <li><strong>Remote-Verbindungen anzeigen</strong></li>
+        <li><code class="shell">git remote -v</code></li>
+    </ul>
+</div>

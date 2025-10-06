@@ -20,11 +20,11 @@
 }
 
 .blue-border.border-box {
-  border-color: #BADFFF;
+  border-color: #bae8d9;
 }
 
 .blue-border.border-box::before {
-  color: #0087ff;
+  color: #00a86b;
 }
 
 .grey-border.border-box {
@@ -53,7 +53,7 @@
 }
 
 .blue-border.border-box code {
-  background: rgba(136, 204, 255, 0.15);
+  background: rgba(136, 212, 170, 0.15);
   color: #4F6375;
 }
 
@@ -100,12 +100,12 @@ gre7-border.border-box code {
 
  /*.chal-goal.bright-blue.solid-box::before {
    content: "\f07b";
-   background: rgba(136,204,255,1);
+   background: rgba(136,212,170,1);
  }
 
  .chal-background.light-blue.solid-box::before {
    content: "\f007";
-   background: #E6F6FF;
+   background: #E6F9F0;
  }*/
 
 .solid-box {
@@ -116,16 +116,16 @@ gre7-border.border-box code {
 
 .light-blue.solid-box {
    color: #4F6375;
-   background: rgba(136, 204, 255, 0.18);
+   background: rgba(136, 212, 170, 0.18);
 }
 
 .bright-blue.solid-box {
   color: #fff;
-  background: rgba(136,204,255,1);
+  background: rgba(136,212,170,1);
 }
 
 .bold-blue.solid-box {
-   background-color: #0087ff;
+   background-color: #00a86b;
    color: #fff;;
 }
 
@@ -160,7 +160,7 @@ gre7-border.border-box code {
    text-align: center;
    white-space: nowrap;
    margin-left: -3px;
-   color: #8cf;
+   color: #88d4aa;
  }
 
  #path-required-warning {
@@ -231,7 +231,7 @@ code.shell:before {
 
 .blue-border-box code {
   border: none;
-  background: rgba(136, 204, 255, 0.15);
+  background: rgba(136, 212, 170, 0.15);
 }
 
 .prenext {
@@ -248,7 +248,7 @@ code.shell:before {
    -------------------------------------------------------------------------- */
 
 .blue-border-box {
-  border: 1px solid #BADFFF;
+  border: 1px solid #bae8d9;
   padding: 18px;
   margin: 18px 0 36px;
   border-radius: 2px;
@@ -257,5 +257,5 @@ code.shell:before {
 .blue-border-box code {
   border: none;
   color: #4F6375;
-  background: rgba(136, 204, 255, 0.15);
+  background: rgba(136, 212, 170, 0.15);
 }

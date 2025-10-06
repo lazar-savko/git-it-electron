@@ -1,0 +1,74 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Erstelle ein neues Repository auf deinem Computer.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Repositories</h2>
+    <p>Ein <strong>Repository</strong> ist eine Sammlung verwandter Elemente. In unserem Fall, beim Schreiben von Software, ist es eine
+        Sammlung von Dateien, die zu einem Software-Projekt gehören. Du kannst es dir als Projektordner mit allen relevanten
+        Dateien darin vorstellen. Tatsächlich wird es so auf deinem Computer aussehen. Manchmal werden sie kurz
+        "Repos" genannt.</p>
+
+    <img src="../../../assets/imgs/repos.png" alt="Eine Zeichnung von vier Dateiordnern" width="600">
+
+    <p>Du sagst Git, was dein Projekt ist, und Git wird anfangen, alle Änderungen an diesem Ordner zu verfolgen. Das macht es zu einem
+        Git-Repository: ein Ordner mit Elementen, die von Git verfolgt werden. Git verfolgt, wann Dateien hinzugefügt, entfernt oder sogar ein
+        einzelner Buchstabe in einer einzelnen Datei geändert wird. All dies plus wer es gemacht hat und wann wird von Git verfolgt. In der Software
+        wird das Verfolgen von Änderungen wie diese <strong>Versionskontrolle</strong> genannt.</p>
+
+    <h2>Terminal verwenden</h2>
+    <p><strong>Terminal</strong> (oder Bash) ist eine Möglichkeit, deinem Computer Anweisungen zu geben, indem du Befehle tippst, anstatt
+        Anwendungen mit deiner Maus zu klicken. Du kannst Dateien umbenennen, Dateien öffnen, neue Ordner erstellen, zwischen
+        Verzeichnissen (Ordnern) wechseln und mehr, alles durch das Ausführen getippter Befehle. Du kannst sogar einen Texteditor für Code (wie <a
+                href="http://en.wikipedia.org/wiki/Vim_(text_editor)" target="_blank"> Vim</a>) in deinem Terminal verwenden und
+        musst nie verlassen!</p>
+
+    <p>Neben der Navigation auf deinem Computer kannst du auch Programme im Terminal verwenden, die eine <strong>Befehlszeilen-
+        Oberfläche (CLI)</strong> haben, was bedeutet, dass sie mit Befehlen im Terminal ausgeführt werden können. Git ist eines davon. Der erste Teil
+        des Befehls lässt deinen Computer wissen, dass du mit Git sprichst. Die Teile danach sind die Befehle und die
+        verschiedenen Optionen, auf die Git reagieren soll.</p>
+
+    <p>In Git-it lernst du einige grundlegende Befehlszeilen-Aktionen (zusätzlich zu Git-Befehlen) für die Navigation auf deinem
+        Computer; sie werden in den Schritten beschrieben.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Ein Repository erstellen</h3>
+    <p>Du wirst einen neuen Projektordner erstellen und ihn dann als Git-Repository initialisieren. Wir nennen den Ordner 'hello-world'
+      in dieser Challenge, aber du kannst einen anderen Namen wählen, wenn du bereits einen Ordner mit diesem Namen hast (es ist ein üblicher Name für erste Projekte).</p>
+
+    <p>Zeit, dein Terminal zu öffnen!
+    <p>
+
+    <p>In deinem Terminal-Fenster tippe diese Befehle, einen nach dem anderen, und drücke nach jedem Enter/Return.</p>
+
+    <p>Erst, erstelle einen neuen Ordner:<br><span class="inline-tip">Tipp: mkdir steht für <em>make directory</em></span></p>
+    <code class="shell">mkdir hello-world</code>
+
+    <p>Dann gehe in diesen Ordner:<br><span class="inline-tip">Tipp: cd steht für <em>change directory</em></span></p>
+    <code class="shell">cd hello-world</code>
+
+    <p>Schließlich, sage Git, den Ordner zu initialisieren (mit der Verfolgung zu beginnen), in dem du dich jetzt befindest:</p>
+    <code class="shell">git init</code>
+
+    <p>Der letzte Befehl sollte etwas zurückgeben, das mit "Initialized empty Git repository" beginnt. Die anderen Befehle geben
+        nichts zurück.</p>
+
+    <p>Du hast es geschafft! Wenn du doppelt sicher sein möchtest, dass es ein Git-Repository ist, tippe <code>git status</code> und wenn es
+        nicht 'fatal: Not a git repository...' zurückgibt, bist du goldrichtig!</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Einen neuen Ordner erstellen (auch bekannt als make directory)</strong></li>
+        <code class="shell">mkdir &#60;FOLDERNAME&#62;</code>
+        <li><strong>In einen bestehenden Ordner navigieren (auch bekannt als change directory)</strong></li>
+        <code class="shell">cd &#60;FOLDERNAME&#62;</code>
+        <li><strong>Die Elemente in einem Ordner auflisten</strong></li>
+        <code class="shell">ls </code>
+        <li><strong>Git für einen Ordner aktivieren</strong></li>
+        <code class="shell">git init</code>
+    </ul>
+</div>

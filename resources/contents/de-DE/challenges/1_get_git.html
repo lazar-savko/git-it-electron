@@ -1,0 +1,70 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Installiere Git auf deinem Computer und konfiguriere deinen Namen und deine E-Mail-Adresse.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Git</h2>
+    <p>Git ist kostenlose <strong>Open-Source-Software</strong> (der <a href="https://github.com/git/git">Quellcode ist
+        öffentlich</a>), geschrieben von Linus Torvalds, der auch den Linux-Betriebssystem-Kernel geschrieben hat. </p>
+    <p>Git ist ein Programm zur Nachverfolgung von Änderungen über die Zeit, bekannt in der Programmierung als <strong>Versionskontrolle</strong>.
+        Wenn du bereits eine Änderungsverfolgung in einem Textbearbeitungsprogramm verwendet hast, dann kennst du das Konzept bereits!
+    </p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Git installieren</h3>
+    <p>Wir empfehlen, Git auf deinem Computer zu installieren, indem du die <a href="https://desktop.github.com">GitHub
+        Desktop</a> App herunterlädst. Wir werden die Desktop-App in Git-it nicht verwenden (wir lernen das Terminal!), aber sie enthält Git und ist
+        der einfachste Weg, Git auf allen Plattformen gleich zu installieren.</p>
+
+    <ul>
+        <li><strong>Windows</strong>: Verwende die <strong>Git Shell</strong> als dein Terminal.</li>
+        <li><strong>Mac</strong>: Öffne GitHub Desktop und wähle in den Einstellungen die Installation der Befehlszeilentools aus. Verwende
+            die <strong>Terminal</strong> App als dein Terminal.
+        </li>
+    </ul>
+
+    <p>Hast du bereits Git oder bist du dir nicht sicher? Tippe <code>git --version</code> in dein Terminal und wenn es eine Versionsnummer
+        höher als <code>1.7.10</code> zurückgibt, bist du bereit! Für weitere Informationen besuche die <a href="http://git-scm.com">Git
+            Website</a>.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Git Software</h2>
+    <p>Die GitHub Desktop App kann viele Dinge mit Git machen, aber nicht alles, deshalb ist das Lernen des Terminals
+        wichtig. Aber sobald du das beherrschst, wirst du froh sein, die Desktop-App zu haben, da sie die Informationen deines
+        Projekts visueller organisiert, wie die GitHub Website.</p>
+
+    <p>Git allein ist nicht wie andere Programme auf deinem Computer. Du wirst wahrscheinlich kein Icon auf deinem Desktop sehen, aber es
+        wird immer für dich verfügbar sein und du kannst es jederzeit über dein Terminal oder Git Desktop
+        Anwendungen aufrufen.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Git konfigurieren</h3>
+    <p>Sobald GitHub Desktop (und damit Git) installiert ist, öffne dein <strong>Terminal</strong>.
+        Du kannst überprüfen, dass Git wirklich da ist, indem du tippst:</p>
+
+    <p><code class="shell">git --version </code></p>
+
+    <p>Dies gibt die Version von Git auf deinem Computer zurück und sieht etwa so aus:</p>
+
+    <p><code class="comment">git version 1.9.1</code></p>
+
+    <p>Als nächstes konfiguriere Git, damit es weiß, deine Arbeit dir zuzuordnen:</p>
+    <p>Setze deinen Namen:</p>
+    <p><code class="shell">git config --global user.name "Dein Name"</code></p>
+    <p>Setze jetzt deine E-Mail:</p>
+    <p><code class="shell">git config --global user.email "deineemail@beispiel.com"</code></p>
+
+    <p>Du bist mit deiner ersten Challenge fertig! Klicke auf den 'Verify' Button, um die Challenge zu überprüfen.</p>
+</div>
+
+{{{ verify_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <h3>Dollar-Zeichen in der Code-Dokumentation</h3>
+    <p>Dollar-Zeichen <code>$</code> werden oft in der Programmierdokumentation verwendet, um zu zeigen, dass die Zeile <strong>Befehlszeilen</strong>
+        Code ist (siehe die Code-Snippets oben). Du tippst das <code>$</code> aber nicht wirklich ein, sondern nur
+        das, was danach kommt.</p>
+</div>

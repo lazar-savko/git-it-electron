@@ -1,0 +1,65 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Merge deinen Branch lokal, lösche den Branch und pull vom Upstream.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Aufräumen</h2>
+
+    <p>Sobald du Branches nicht mehr brauchst, kannst du sie lokal und remote löschen. Das ist hilfreich, damit du nicht
+        mit einem Haufen alter Branches endest.</p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Lokal mergen</h3>
+    <p>Dein Pull Request wurde gemergt! Dein Branch wurde in den 'gh-pages' Branch des Originals auf GitHub gemergt.
+        Du kannst deinen Branch auch lokal mergen.</p>
+
+    <p>Zuerst wechsle in den Branch, in den du mergen möchtest—in diesem Fall den Branch 'gh-pages'.</p>
+    <p><code class="shell">git checkout gh-pages</code></p>
+
+    <p>Sage jetzt Git, welchen Branch du mergen möchtest—in diesem Fall deinen Feature-Branch, der mit "add-" beginnt.</p>
+    <p><code class="shell">git merge &#60;BRANCHNAME&#62;</code></p>
+
+    <p>Räume auf, indem du deinen Feature-Branch löschst. Jetzt, da er gemergt wurde, brauchst du ihn nicht wirklich mehr.</p>
+    <p><code class="shell">git branch -d &#60;BRANCHNAME&#62;</code></p>
+
+    <p>Du kannst den Branch auch von deinem Remote auf GitHub löschen:</p>
+    <p><code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code></p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Vom Upstream pullen</h3>
+    <p>Und last but not least, das Original hat sich seit dem Merge deines Pull Requests geändert—Reporobot hat deinen Namen zur
+        Website hinzugefügt! Falls du diese Änderungen vom Upstream pullst, wirst du auf dem neuesten Stand sein und auch diese Version haben. Du kannst
+        es tatsächlich auch live sehen unter: yourusername.github.io/patchwork.</p>
+
+    <p>Um vom ursprünglichen Upstream zu pullen:</p>
+    <p><code class="shell">git pull upstream gh-pages</code></p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Herzlichen Glückwunsch!</h2>
+    <p>Du hast lokale Repositories erstellt, Remote-Repositories, mit einem Kollaborateur gearbeitet, gepusht, gepullt und dich den
+        Millionen anderen angeschlossen, die Open Source entwickeln und bereichern!</p>
+
+    <p>Besuche <a href="https://jlord.github.io/patchwork" target="_blank">jlord.github.io/patchwork</a>, um zu sehen, wie dein Name
+        eingearbeitet wurde! Möchtest du weitermachen? Schau dir den <a href="../pages/resources.html#what-next">What Next</a>
+        Bereich auf der Ressourcen-Seite in dieser App an.</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Einen Branch in den aktuellen Branch mergen</strong></li>
+        <code class="shell">git merge &#60;BRANCHNAME&#62;</code>
+        <li><strong>Den Branch ändern, an dem du arbeitest</strong></li>
+        <code class="shell">git checkout &#60;BRANCHNAME&#62;</code>
+        <li><strong>Einen lokalen Branch löschen</strong></li>
+        <code class="shell">git branch -d &#60;BRANCHNAME&#62;</code>
+        <li><strong>Einen Remote-Branch löschen</strong></li>
+        <code class="shell">git push &#60;REMOTENAME&#62; --delete &#60;BRANCHNAME&#62;</code>
+        <li><strong>Von einem Remote-Branch pullen</strong></li>
+        <code class="shell">git pull &#60;REMOTENAME&#62; &#60;BRANCHNAME&#62;</code>
+    </ul>
+</div>

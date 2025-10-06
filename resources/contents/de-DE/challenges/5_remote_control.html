@@ -1,0 +1,114 @@
+<div id="challenge-desc" class="chal-goal blue-border border-box">
+    <p>Verbinde dein lokales Repository mit einem Remote-Repository und pushe Änderungen dorthin.</p>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Remotes</h2>
+
+    <p>Wenn du etwas auf GitHub legst, lebt diese Kopie auf einem von GitHub's Servern. Das macht es zu einem
+        <strong>Remote</strong>-Repository, weil es nicht auf deinem Computer ist, sondern auf einem Server, "remote" und irgendwo
+        anders. Durch <strong>Pushen</strong> deiner <strong>lokalen</strong> (auf deinem Computer) Änderungen dorthin, hältst du es
+        auf dem neuesten Stand.</p>
+
+    <p>Andere können dann immer die neuesten Änderungen von deinem Projekt erhalten, indem sie deine Änderungen vom
+        Remote herunter<strong>pullen</strong> (und auf ihren Computer). So kann jeder an einem Projekt zusammenarbeiten, ohne Zugang zu
+        deinem Computer zu benötigen, wo deine lokale Kopie gespeichert ist.</p>
+
+    <img src="../../../assets/imgs/remotes.png"
+         alt="Ein Diagramm, das GitHub als zentralen Server zeigt, der die GitHub.com Website erstellt. Zwei Computer auf beiden Seiten pushen und pullen von GitHub."
+         width="100%">
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Ein Remote-Repository erstellen</h3>
+    <p>Du möchtest deine <strong>lokale</strong> Version mit einer synchronisieren, die auf GitHub.com gespeichert ist. Erstelle zuerst ein neues <strong>Remote</strong>
+        Repository auf GitHub.com.</p>
+
+    <ul>
+        <li>Gehe zu <a href="http://github.com " target="_blank">github.com</a>, melde dich an und klicke auf das '+' oben
+            rechts und dann auf 'New repository'.
+        </li>
+        <li>Gib ihm einen Namen, der dem Namen deines lokalen Repositories entspricht, 'hello-world', und eine kurze Beschreibung.</li>
+        <li>Mache es öffentlich. Das bedeutet, es wird in deinem öffentlichen Profil aufgelistet.</li>
+        <li>Initialisiere nicht mit einem README, weil wir bereits eine Datei lokal namens 'readme.txt' haben. Das ist eine Hilfs-
+            Option von GitHub, falls du es noch nicht gemacht hättest.
+        </li>
+        <li>Lasse '.gitignore' und 'license' auf 'none' stehen. Wir werden sie in diesem Tutorial nicht verwenden.</li>
+        <li>Klicke auf 'Create repository'!</li>
+    </ul>
+</div>
+
+<div class="chal-background light-blue solid-box">
+    <h2>Readmes, .gitignores und Lizenzen</h2>
+    <p>Das sind häufige Dateien in Open-Source-Projekten, daher bietet GitHub eine
+        Option, sie für dich zu erstellen, um das Starten eines neuen Projekts zu erleichtern.</p>
+    <p>Eine <strong>Readme</strong> erklärt, was das Projekt ist, wie man es verwendet, und oft, wie man beitragen kann (obwohl
+        es manchmal eine zusätzliche Datei 'CONTRIBUTING.md' für diese Details gibt).</p>
+    <p>Eine <strong>.gitignore</strong> ist eine Liste von Dateien, die Git <em>nicht</em> verfolgen sollte, zum Beispiel Dateien mit
+        Passwörtern!</p>
+    <p>Eine <strong>Lizenz</strong>-Datei ist der Typ der Lizenz, den du auf dein Projekt legst. Das lässt andere wissen, wie sie es
+        verwenden können. Informationen zu den Typen findest du hier: <a href="http://www.choosealicense.com" target="_blank">choosealicense.com</a>.
+    </p>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Verbinde dein Lokales mit deinem Remote</h3>
+    <p>Jetzt hast du ein leeres Repository auf GitHub.com gestartet. Oben siehst du 'Quick Setup', stelle sicher, dass der
+        'HTTPS' Button ausgewählt ist und kopiere die Adresse—das ist die Adresse deines Repositories auf GitHub's Servern.</p>
+
+    <p>Zurück in deinem Terminal und innerhalb des 'hello-world' Ordners, den du als Git-Repository in der
+        vorherigen Challenge initialisiert hast, möchtest du Git sagen, sich die Adresse der Remote-Version auf GitHub's Servern zu merken. Du
+        kannst mehrere Remotes haben, daher benötigt jedes einen Namen. Der primäre Remote wird typischerweise <code>origin</code> genannt.
+    </p>
+
+    <p>Um einen Remote namens 'origin' zu deinem Repository hinzuzufügen:</p>
+    <code class="shell">git remote add origin &lt;URLFROMGITHUB&gt;</code>
+
+    <p>Dein <strong>lokales</strong> Repository weiß jetzt, wo dein <strong>Remote</strong>-Repository namens 'origin'
+        auf GitHub's Servern lebt. Denke daran wie das Hinzufügen eines Namens und einer Adresse zur Schnellwahl—jetzt kannst du etwas
+        dorthin senden, wenn du es brauchst.</p>
+
+    <blockquote>
+        <p><strong>Windows-Benutzer:</strong></p>
+        <p>Falls du <strong>GitHub Desktop</strong> auf deinem Computer hast, wird ein Remote namens 'origin' automatisch
+            in deinem lokalen Repository erstellt. In diesem Fall musst du ihm nur sagen, welche URL mit
+            'origin' verknüpft werden soll. Verwende diesen Befehl anstatt des 'add' Befehls oben:</p>
+
+        <code class="shell">git remote set-url origin &lt;URLFROMGITHUB&gt;</code>
+    </blockquote>
+</div>
+
+<div class="chal-step blue-border border-box">
+    <h3>Arbeit zu deinem Remote pushen</h3>
+    <p>Als nächstes möchtest du alles, was du lokal gemacht hast, zu deinem Remote-Repository auf GitHub <strong>pushen</strong> (senden).
+        Das ist etwas, was du oft machen wirst, damit deine Remote-Version auf dem neuesten Stand ist und dem Zustand deiner lokalen
+        Version entspricht.</p>
+
+    <p>Git hat ein Branching-System, damit du an verschiedenen Teilen eines Projekts zu verschiedenen Zeiten arbeiten kannst. Wir werden
+        später mehr darüber lernen, aber standardmäßig heißt der erste Branch 'main'. Wenn du von einem
+        Projekt pushst (und später pullst), sagst du Git den <strong>Branch-Namen</strong>, den du willst, und den Namen des <strong>Remotes</strong>, auf dem
+        es lebt.</p>
+
+    <p>In diesem Fall senden wir unseren Branch namens 'main' zu unserem Remote auf GitHub namens 'origin'. </p>
+    <code class="shell">git push origin main</code>
+
+    <p>Gehe jetzt zur Seite deines Remote-Repositories auf GitHub.com und aktualisiere die Seite. <strong>Wow!</strong> Alles ist
+        jetzt lokal genauso wie remote. Glückwunsch zu deinem ersten öffentlichen Repository!</p>
+</div>
+
+{{{ verify_directory_button }}}
+
+<div class="chal-tip grey-border border-box">
+    <ul class="no-list-style">
+        <li><strong>Remote-Verbindungen hinzufügen</strong></li>
+        <code class="shell">git remote add &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Eine URL zu einem Remote setzen</strong></li>
+        <code class="shell">git remote set-url &lt;REMOTENAME&gt; &lt;URL&gt;</code>
+        <li><strong>Änderungen einholen</strong></li>
+        <code class="shell">git pull &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt;</code>
+        <li><strong>Remote-Adressen anzeigen</strong></li>
+        <code class="shell">git remote -v</code>
+        <li><strong>Änderungen pushen</strong></li>
+        <code class="shell">git push &lt;REMOTENAME&gt; &lt;BRANCH&gt;</code>
+    </ul>
+</div>

@@ -20,11 +20,11 @@ button:focus {
 }
 
 button:hover {
-  background-color: #badfff;
+  background-color: #bae8d9;
 }
 
 button:disabled {
-  background-color: rgba(24,105,177,1);
+  background-color: rgba(0,168,107,0.8);
 }
 
 button .octicon {
@@ -39,30 +39,30 @@ button .octicon {
 
 .btn-primary {
   margin: 9px 0;
-  background: #0087ff;
+  background: #00a86b;
   color: #fff;
   border-radius: 2px;
   text-transform: inherit;
 }
 
 .btn-secondary {
-  background: #8cf;
+  background: #88d4aa;
   color: #fff;
   border-radius: 2px;
 }
 
 .btn-white {
   background: #fff;
-  color: #0087ff;
+  color: #00a86b;
   border-radius: 2px;
 }
 
 .btn-outline {
-  border: 1px solid #8cf;
+  border: 1px solid #88d4aa;
   background: none;
   padding: 4px 13px;
   border-radius: 3px;
-  color: #0087ff;
+  color: #00a86b;
   display: inline-block;
 }
 
@@ -75,7 +75,7 @@ button .octicon {
 }
 
 .btn-primary:hover {
-  background: #057ce7;
+  background: #008a5a;
 }
 
 .btn-large {
@@ -89,38 +89,38 @@ button .octicon {
 }
 
 .border-group-left {
-  border: 1px solid #0087ff;
+  border: 1px solid #00a86b;
   border-radius: 2px 0 0 2px;
   padding: 10px 14px;
 }
 
 .border-group-middle {
-  border-top: 1px solid #0087ff;
-  border-bottom: 1px solid #0087ff;
+  border-top: 1px solid #00a86b;
+  border-bottom: 1px solid #00a86b;
   padding: 10px 14px;
   margin-left: -4px;
 }
 
 .border-group-right {
-  border: 1px solid #0087ff;
+  border: 1px solid #00a86b;
   border-radius: 0 2px 2px 0;
   padding: 10px 14px;
 }
 
 .border-group-right.btn {
-  border: 1px solid #88CCFF;
-  color: #88CCFF;
-  border-left-color: #0087FF;
+  border: 1px solid #88d4aa;
+  color: #88d4aa;
+  border-left-color: #00a86b;
 }
 
 .border-group-right.btn:hover {
-  border: 1px solid #0087ff;
-  color: #0087ff;
+  border: 1px solid #00a86b;
+  color: #00a86b;
   cursor: pointer;
 }
 
 .border-group-container {
-  color: #0087ff;
+  color: #00a86b;
   padding: 20px 0;
   user-select: none;
 }
@@ -141,7 +141,7 @@ button .octicon {
 .lang-select:after {
   content: "";
   border: 5px solid transparent;
-  /*border-top-color: #8cf;*/
+  /*border-top-color: #88d4aa;*/
   border-top-color: #A6A6A6;
   position: relative;
   left: 66px;

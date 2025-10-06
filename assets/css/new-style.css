@@ -51,16 +51,16 @@ li {
 }
 
 a {
-  color: #0087ff;
+  color: #00a86b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4BABFF;
+  color: #4dd1a3;
 }
 
 blockquote {
-  border-left: 1px solid rgb(186, 223, 255);
+  border-left: 1px solid rgb(186, 232, 217);
   padding-left: 18px;
   margin: 30px 0;
   color: rgba(51, 57, 53, 0.83);
@@ -161,11 +161,37 @@ ul.no-list-style {
   margin-top: 12px;
 }
 
+.header-icons-overlay {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+  margin: 8px;
+}
+
+.app-icon {
+  height: 32px;
+  width: 32px;
+  padding: 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.old-icon {
+  opacity: 0.7; /* Slightly faded to show it's the old version */
+}
+
+.new-icon {
+  /* New icon stands out more */
+}
+
 .challenge-title {
   text-transform: capitalize;
   font-size: 19px;
   font-weight: 800;
-  color: #4BABFF;
+  color: #4dd1a3;
   line-height: 1;
   display: inline-block;
 }
@@ -177,7 +203,7 @@ ul.no-list-style {
 }
 
 .filledblock:hover {
-  background: #4BABFF;
+  background: #4dd1a3;
   color: #fff;
   border-radius: 2px;
 }
@@ -225,7 +251,7 @@ ul.no-list-style {
   top: 9px;
   height: 6px;
   width: 6px;
-  border: 0.15em solid #0087ff;
+  border: 0.15em solid #00a86b;
   border-radius: 50px;
 }
 
@@ -235,8 +261,8 @@ ul.no-list-style {
   top: 12px;
   height: 6px;
   width: 6px;
-  border: 0.15em solid #0087ff;
-  background-color: #0087ff;
+  border: 0.15em solid #00a86b;
+  background-color: #00a86b;
   border-radius: 50px;
 }
 
@@ -250,7 +276,7 @@ ul.no-list-style {
 }
 
 .challenge-item.current {
-  background-color: #8cf;
+  background-color: #88d4aa;
   color: #fff;
   margin-right: -3px;
   border-color: white;
@@ -265,7 +291,7 @@ ul.no-list-style {
 .challenge-name {
   text-transform: capitalize;
   font-weight: 900;
-  color: #0087ff;
+  color: #00a86b;
 }
 
 /* FOOTER
@@ -331,23 +357,23 @@ ul.no-list-style {
 }
 
 .progress-circles .border-left {
-  border-left: 1px solid #0087ff;
+  border-left: 1px solid #00a86b;
 }
 
 .progress-circle {
   display: inline-block;
   width: 10px;
 	height: 10px;
-  border: 0.15em solid #0087ff;
+  border: 0.15em solid #00a86b;
 	border-radius: 50px;
 }
 
 .progress-circle.completed {
-  background: #0087ff;
+  background: #00a86b;
 }
 
 .progress-circle.completed + .progress-circle:not(.completed) {
-  background: #8cf;
+  background: #88d4aa;
   animation: blink 1s steps(2, start) infinite;
 }
 
