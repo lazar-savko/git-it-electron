@@ -164,7 +164,7 @@ ul.no-list-style {
 .header-icons-overlay {
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: calc(50% - 15px);
   transform: translateY(-50%);
   display: flex;
   gap: 8px;
