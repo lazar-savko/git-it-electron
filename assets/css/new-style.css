@@ -187,6 +187,216 @@ ul.no-list-style {
   /* New icon stands out more */
 }
 
+/* Ensure text visibility on colored backgrounds */
+* {
+  color: inherit;
+}
+
+body, p, div, span, li, td, th {
+  color: rgba(51, 57, 53, 0.83) !important;
+}
+
+/* Fix text visibility on green backgrounds - use white text */
+.bright-blue.solid-box,
+.bold-blue.solid-box,
+.challenge-item.current,
+[style*="background-color: #4dd1a3"],
+[style*="background-color: #00a86b"],
+[style*="background-color: #88d4aa"] {
+  color: #fff !important;
+}
+
+/* Ensure other elements have dark text, not green */
+.border-box, .solid-box, .chal-goal, .chal-step, .chal-background {
+  color: rgba(51, 57, 53, 0.83) !important;
+}
+
+/* Override any green text that might be invisible on green backgrounds */
+.section-header, .section-label, .challenge-title {
+  color: #4dd1a3 !important;
+}
+
+/* Fix disabled verify button visibility */
+#verify-challenge:disabled,
+#verify-challenge[disabled],
+#select-directory:disabled,
+#select-directory[disabled] {
+  background-color: rgba(51, 57, 53, 0.3) !important;
+  color: rgba(51, 57, 53, 0.6) !important;
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}
+
+/* Progress Circles Section Styling */
+#progress-cirlces-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#progress-cirlces-section .border-group-middle {
+  border: none;
+}
+
+#progress-cirlces-section .border-group-right {
+  border: none;
+}
+
+#progress-cirlces-section .border-group-left {
+  border: none;
+  font-size: 19px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+} 
+
+#progress-cirlces-section .js-clear-all-challenges {
+  font-size: 19px;
+  font-weight: 600;
+  color: white !important;
+  margin-bottom: 16px;
+  background-color: #7cceb8;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#progress-cirlces-section .js-clear-all-challenges .octicon {
+  color: white !important;
+  height: 19px;
+}
+
+.border-group-left {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.border-group-middle {
+  margin-bottom: 16px;
+}
+
+.basics-progress-section,
+.advanced-progress-section {
+  margin-bottom: 20px;
+  padding: 8px;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+.section-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section-progress {
+  margin-bottom: 8px;
+}
+
+.section-label {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.progress-circles {
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.progress-circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  border: 2px solid #d1d5db;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.progress-circle:hover {
+  transform: scale(1.05);
+  border-color: #4dd1a3;
+}
+
+.progress-circle.completed {
+  background: #4dd1a3;
+  border-color: #4dd1a3;
+}
+
+.progress-circle.completed:hover {
+  background: #3bb896;
+  border-color: #3bb896;
+}
+
+.border-group-right {
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.border-group-right:hover {
+  background: #fecaca;
+  color: #b91c1c;
+}
+
+/* Start buttons section */
+.start-buttons-section {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.start-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.basics-btn {
+  background: #4dd1a3;
+  color: white;
+}
+
+.basics-btn:hover {
+  background: #3bb896;
+  transform: translateY(-2px);
+}
+
+.advanced-btn {
+  background: #6b46c1;
+  color: white;
+}
+
+.advanced-btn:hover {
+  background: #553c9a;
+  transform: translateY(-2px);
+}
+
 .challenge-title {
   text-transform: capitalize;
   font-size: 19px;
