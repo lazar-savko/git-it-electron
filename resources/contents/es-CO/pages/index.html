@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Git-it</title>
+        <link rel="icon" type="image/png" href="../../../assets/new-icon.png">
         <link rel="stylesheet" href="../../../assets/css/new-style.css">
         <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
         <link rel="stylesheet" href="../../../assets/css/buttons.css">
@@ -18,25 +19,71 @@
                 </select>
             </div>
             <a class="filledblock" href="./index.html">Git-it</a>
+            <div class="header-icons-overlay">
+                <img src="../../../assets/git-it.png" alt="Git-it Old" class="app-icon old-icon" />
+                <img src="../../../assets/new-icon.png" alt="Git-it New" class="app-icon new-icon" />
+            </div>
         </header>
 
         <div class="page-wrapper">
-            <div id="progress-cirlces-section" class="progress-circles border-group-container full-width">
-                <span class="border-group-left">Retos realizados:</span>
-                <span class="border-group-middle">
-                    <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
-                    <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
-                    <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
-                    <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
-                    <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
-                    <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
-                    <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
-                    <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
-                    <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
-                    <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
-                    <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
-                </span>
-                <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
+            <div id="progress-cirlces-section" class="progress-container">
+                <div class="progress-header">
+                    <h2>Tu Progreso de Aprendizaje</h2>
+                    <button class="clear-progress-btn js-clear-all-challenges" title="Borrar todo el progreso">
+                        <span class="octicon octicon-trashcan"></span>
+                        Borrar Todo
+                    </button>
+                </div>
+                
+                <div class="progress-grid">
+                    <div class="progress-card basics-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="card-icon basics-icon">📚</div>
+                                <h3>Git Básico</h3>
+                            </div>
+                            <div class="progress-badge">
+                                <span class="section-label">0/6</span>
+                            </div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-circles">
+                                <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
+                                <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
+                                <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
+                                <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
+                                <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
+                                <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card advanced-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="card-icon advanced-icon">🚀</div>
+                                <h3>GitHub & Colaboración</h3>
+                            </div>
+                            <div class="progress-badge">
+                                <span class="section-label">0/5</span>
+                            </div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-circles">
+                                <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
+                                <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="Small World"></div></a>
+                                <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull Updates"></div></a>
+                                <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Pull Requests"></div></a>
+                                <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="start-buttons-section">
+                <a href="../challenges/get_git.html" class="start-btn basics-btn">Comenzar Básico →</a>
+                <a href="../challenges/branches_arent_just_for_birds.html" class="start-btn advanced-btn">Comenzar Avanzado →</a>
             </div>
 
             <div id="show-first-run">
@@ -48,68 +95,34 @@
                 <div class="chal-background light-blue solid-box">
                     <h3>Pero espera, hay más!</h3>
                     <p>Puedes hacer los retos de Git-it en <strong>Mandarín (Chino)</strong>, <strong>Japonés</strong>, <strong>Coreano</strong>, <strong>Portugués (Brazil)</strong>, <strong>Inglés (Estados Unidos)</strong>, <strong>Español (Colombia)</strong>, <strong>Español (España)</strong> y <strong>Ucraniano</strong>, 
-                        sólo selecciona el lenguaje que quieras desde el menú arriba a la izquierda.</p>
+                        solo selecciona el idioma que quieras del menú en la parte superior izquierda.</p>
 
-                    <p>La opción 'Ventana' (window) en el menú de la aplicación te llevará a <strong><a
-                            href="dictionary.html">Diccionario</a></strong>, <strong><a
-                            href="resources.html">Recursos</a></strong> y <strong>la página<a
-                            href="about.html"> Acerca de</a></strong>.</p>
+                    <p>La opción 'Window' en el menú de la aplicación te llevará a la <strong><a
+                            href="dictionary.html">Dictionary</a></strong>, <strong><a
+                            href="resources.html">Resources</a></strong> y <strong><a
+                            href="about.html">About</a></strong> página.</p>
                 </div>
 
                 <a href="../challenges/get_git.html" id="get-started">
-                    <button class="btn-primary">Empiza con el primer reto!</button>
+                    <button class="btn-primary">¡Empezar el primer reto!</button>
                 </a>
             </div>
 
             <div id="show-wip-run">
-                <!-- <div class="progress-circles border-group-container full-width">
-                  <span class="border-group-left">Challenges completed:</span>
-                  <span class="border-group-middle">
-                    <a href="challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
-                    <a href="challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
-                    <a href="challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
-                    <a href="challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
-                    <a href="challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
-                    <a href="challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
-                    <a href="challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
-                    <a href="challenges/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
-                    <a href="challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
-                    <a href="challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
-                    <a href="challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
-                  </span>
-                  <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
-                </div> -->
-                <h1>Ya has empezado!</h2>
-                    <p>Estás progresando, continua dónde estabas.</p>
+                <h1>¡En tu camino!</h2>
+                    <p>Estás haciendo progreso, continúa y retoma donde lo dejaste.</p>
                     <a id="left-off-from">
-                        <button class="btn-primary">Continuar!</button>
+                        <button class="btn-primary">¡Retomar donde lo dejaste!</button>
                     </a>
             </div>
 
             <div id="show-finished-run">
-                <!-- <div class="progress-circles border-group-container full-width">
-                  <span class="border-group-left">Challenges completed:</span>
-                  <span class="border-group-middle">
-                    <a href="challenges/get_git.html"><div class="progress-circle-completed" title="Get Git"></div></a>
-                    <a href="challenges/repository.html"><div class="progress-circle-completed" title="Repository"></div></a>
-                    <a href="challenges/commit_to_it.html"><div class="progress-circle-completed" title="Commit to it"></div></a>
-                    <a href="challenges/githubbin.html"><div class="progress-circle-completed" title="GitHubbin"></div></a>
-                    <a href="challenges/remote_control.html"><div class="progress-circle-completed" title="Remote Control"></div></a>
-                    <a href="challenges/forks_and_clones.html"><div class="progress-circle-completed" title="Forks and Clones"></div></a>
-                    <a href="challenges/branches_arent_just_for_birds.html"><div class="progress-circle-completed" title="Branches"></div></a>
-                    <a href="challenges/its_a_small_world.html"><div class="progress-circle-completed" title="It's a small world"></div></a>
-                    <a href="challenges/pull_never_out_of_date.html"><div class="progress-circle-completed" title="Pull, never out of date"></div></a>
-                    <a href="challenges/requesting_you_pull_please.html"><div class="progress-circle-completed" title="Requesting you pull please"></div></a>
-                    <a href="challenges/merge_tada.html"><div class="progress-circle-completed" title="Merge, tada!"></div></a>
-                  </span>
-                  <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
-                </div> -->
-                <h1>Felicitaciones!</h2>
-                    <p>Terminaste los retos. ¿estás preparado para el código social, qué sigue entonces?</p>
+                <h1>¡Felicidades!</h2>
+                    <p>Has terminado los retos y estás listo para el código social—¿qué sigue?</p>
                     <a href="resources.html">
-                        <button class="btn-primary">Ideas de proyectos para principiantes</button>
+                        <button class="btn-primary">Ideas para proyectos principiantes</button>
                     </a>
-                    <button class="btn-secondary js-clear-all-challenges">Limpiar los resultados y volver a empezar</button>
+                    <button class="btn-secondary js-clear-all-challenges">Limpiar y empezar de nuevo</button>
             </div>
 
         </div>

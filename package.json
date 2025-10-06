@@ -21,9 +21,11 @@
     "build-chals": "node lib/build-challenges.js",
     "build-pages": "node lib/build-pages.js",
     "build-all": "npm run clean && npm run build-chals && npm run build-pages",
-    "pack-mac": "electron-packager . Git-it --platform=darwin --arch=x64   --icon=assets/git-it.icns --overwrite --ignore=/out/ --ignore=assets/PortableGit --ignore=resources/ --prune=true --out=out",
-    "pack-lin": "electron-packager . Git-it --platform=linux  --arch=x64   --icon=assets/git-it.png  --overwrite --ignore=/out/ --ignore=assets/PortableGit --ignore=resources/ --prune=true --out=out",
-    "pack-win": "electron-packager . Git-it --platform=win32  --arch=ia32  --icon=assets/git-it.ico  --overwrite --ignore=/out/ --ignore=resources/ --prune=true --out=out "
+    "pack-mac": "electron-packager . Git-it --platform=darwin --arch=x64   --icon=assets/new-icon.png --overwrite --ignore=/out/ --ignore=assets/PortableGit --ignore=resources/ --prune=true --out=out",
+    "pack-lin": "electron-packager . Git-it --platform=linux  --arch=x64   --icon=assets/new-icon.png  --overwrite --ignore=/out/ --ignore=assets/PortableGit --ignore=resources/ --prune=true --out=out",
+    "pack-win": "electron-packager . Git-it --platform=win32  --arch=ia32  --icon=assets/new-icon.ico  --overwrite --ignore=/out/ --ignore=resources/ --prune=true --out=out",
+    "pack-win64": "electron-packager . Git-it --platform=win32  --arch=x64  --icon=assets/new-icon.ico  --overwrite --ignore=/out/ --ignore=resources/ --prune=true --out=out",
+    "build-release": "npm run build-all && npm run pack-mac && npm run pack-win && npm run pack-win64 && npm run pack-lin"
   },
   "repository": {
     "type": "git",

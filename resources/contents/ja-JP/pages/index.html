@@ -2,87 +2,127 @@
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Git-it</title>
-        <meta name="description" content="learn git and github">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="../../../assets/imgs/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../../../assets/css/style.css">
+        <link rel="icon" type="image/png" href="../../../assets/new-icon.png">
+        <link rel="stylesheet" href="../../../assets/css/new-style.css">
+        <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
+        <link rel="stylesheet" href="../../../assets/css/buttons.css">
+        <link rel="stylesheet" href="../../../assets/octicons.css">
         <script src="../../../lib/challenges-completed.js"></script>
         <script src="../../../lib/handle-external-links.js"></script>
     </head>
-    <body class="tableofcontents">
+    <body class="index-page">
         <header class="site-header">
             <div class="lang-select">
-                <select id="lang-select" class="lang-select">
+                <select id="lang-select" class="lang-select btn-outline">
                     {{ localemenu }}
                 </select>
             </div>
-            <a class="filledblock" href="./index.html">
-                Git-it
-            </a>
+            <a class="filledblock" href="./index.html">Git-it</a>
+            <div class="header-icons-overlay">
+                <img src="../../../assets/git-it.png" alt="Git-it Old" class="app-icon old-icon" />
+                <img src="../../../assets/new-icon.png" alt="Git-it New" class="app-icon new-icon" />
+            </div>
         </header>
 
         <div class="page-wrapper">
-            <h2>Git-itにようこそ!</h2>
-            <p><a href="http://github.com/jlord/git-it" target="_blank">Git-it workshop</a> チャレンジの各ステップの説明です。</p>
-            <p>Git-itをインストールすればオフラインでも教材として利用できます（ターミナルでチャレンジするときはターミナルの説明を見てください）。楽しんでください!</p>
+            <div id="progress-cirlces-section" class="progress-container">
+                <div class="progress-header">
+                    <h2>学習進捗</h2>
+                    <button class="clear-progress-btn js-clear-all-challenges" title="すべての進捗をクリア">
+                        <span class="octicon octicon-trashcan"></span>
+                        すべてクリア
+                    </button>
+                </div>
+                
+                <div class="progress-grid">
+                    <div class="progress-card basics-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="card-icon basics-icon">📚</div>
+                                <h3>Git基礎</h3>
+                            </div>
+                            <div class="progress-badge">
+                                <span class="section-label">0/6</span>
+                            </div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-circles">
+                                <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
+                                <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
+                                <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
+                                <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
+                                <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
+                                <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card advanced-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="card-icon advanced-icon">🚀</div>
+                                <h3>GitHub & コラボレーション</h3>
+                            </div>
+                            <div class="progress-badge">
+                                <span class="section-label">0/5</span>
+                            </div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-circles">
+                                <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
+                                <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="Small World"></div></a>
+                                <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull Updates"></div></a>
+                                <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Pull Requests"></div></a>
+                                <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="start-buttons-section">
+                <a href="../challenges/get_git.html" class="start-btn basics-btn">基礎を始める →</a>
+                <a href="../challenges/branches_arent_just_for_birds.html" class="start-btn advanced-btn">応用を始める →</a>
+            </div>
 
-            <a href="../challenges/get_git.html" id="get-started">
-                <button class="teal full-width">Get Started!</button>
-            </a>
+            <div id="show-first-run">
+                <h1>ようこそ!</h1>
+                <p>Git-itはGitとGitHubの基本を教えます。これらの基本は単なるGitとGitHubの初心者スキルではなく、
+                    あなたの素晴らしいソーシャルコーディング+バージョン管理された未来で繰り返し使用する
+                    コマンドとステップです。</p>
 
-            <h2>Git-it チャレンジ</h2>
+                <div class="chal-background light-blue solid-box">
+                    <h3>でも待ってください—さらにあります</h3>
+                    <p>左上部のメニューから希望する言語を選択するだけで、<strong>伝統的中国語</strong>、<strong>日本語</strong>、<strong>韓国語</strong>、<strong>ポルトガル語（ブラジル）</strong>、<strong>ウクライナ語</strong>でGit-itを完了することもできます。</p>
 
-            <ol class="toc">
-                <li id="get_git"><a href="../challenges/get_git.html">Get Git</a> Gitをインストールして設定をする
-                </li>
-                <li id='repository'><a href="../challenges/repository.html">Repository
-                </a> ローカルのrepositoryを作成
-                </li>
-                <li id='commit_to_it'><a href="../challenges/commit_to_it.html">Commit to it</a>
-                    ステータスを確認して、コンテンツを追加してcommitをする
-                </li>
-                <li id='githubbin'><a href="../challenges/githubbin.html">GitHubbin</a>
-                    GitHubのアカウントを作成
-                </li>
-                <li id='remote_control'><a href="../challenges/remote_control.html">Remote Control</a>
-                    ローカルのrepositoryをGitHub.comのrepositoryに接続</a></li>
-                <li id='forks_and_clones'><a href="../challenges/forks_and_clones.html">Forks and
-                    Clones</a> オープンソースのrepositoryをforkしてcloneする
-                </li>
-                <li id='branches_arent_just_for_birds'><a
-                        href="../challenges/branches_arent_just_for_birds.html">Branches aren't just
-                    for Birds</a> 新機能・修正のためにbranchを作成
-                </li>
-                <li id='its_a_small_world'><a href="../challenges/its_a_small_world.html">It's a Small
-                    World</a> Collaboratorを追加して作業を同期する (こんにちは、 @reporobot!)
-                </li>
-                <li id='pull_never_out_of_date'><a href="../challenges/pull_never_out_of_date.html">Pull,
-                    Never Out of Date</a> 修正をGitHub.comと同期するためにpushとpullを行う
-                </li>
-                <li id='requesting_you_pull_please'><a
-                        href="../challenges/requesting_you_pull_please.html">Requesting You Pull
-                    Please</a> Pull requestを作成
-                </li>
-                <li id='merge_tada'><a href="../challenges/merge_tada.html">Merge Tada</a>
-                    Branchをmergeしてdelete(削除)する
-                </li>
-            </ol>
+                    <p>アプリケーションメニューの「ウィンドウ」オプションから<strong><a
+                            href="dictionary.html">辞書</a></strong>、<strong><a
+                            href="resources.html">リソース</a></strong>、<strong><a
+                            href="about.html">について</a></strong>ページにアクセスできます。</p>
+                </div>
 
-            <button id="clear-all-challenges">Clear all challenge statues</button>
+                <a href="../challenges/get_git.html" id="get-started">
+                    <button class="btn-primary">チャレンジ1を開始!</button>
+                </a>
+            </div>
 
-            <footer>
-                <ul>
-                    <li class="all-caps"><a href="../../en-US/pages/index.html"><strong>Git-it Challenges</strong></a></li>
-                    <li class="all-caps"><a href="../../en-US/pages/about.html">About</a></li>
-                    <li class="all-caps"><a href="../../en-US/pages/dictionary.html">Dictionary</a></li>
-                    <li class="all-caps"><a href="../../en-US/pages/resources.html">Resources</a></li>
-                    <li class="all-caps">
-                        <a href="http://github.com/jlord/git-it/issues/new" target="_blank">Open an Issue</a>
-                    </li>
-                </ul>
-            </footer>
+            <div id="show-wip-run">
+                <h1>順調です!</h2>
+                    <p>進歩しています。続けて、中断したところから再開してください。</p>
+                    <a id="left-off-from">
+                        <button class="btn-primary">中断したところから再開!</button>
+                    </a>
+            </div>
+
+            <div id="show-finished-run">
+                <h1>おめでとうございます!</h2>
+                    <p>チャレンジを完了し、ソーシャルコーディングの準備が整いました—次は何ですか？</p>
+                    <a href="resources.html">
+                        <button class="btn-primary">初心者プロジェクトのアイデア</button>
+                    </a>
+                    <button class="btn-secondary js-clear-all-challenges">クリアして最初から</button>
+            </div>
 
         </div>
         <script src="../../../lib/languages.js"></script>

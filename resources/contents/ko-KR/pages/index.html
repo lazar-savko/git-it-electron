@@ -3,6 +3,7 @@
   <head>
       <meta charset="utf-8">
       <title>Git-it</title>
+      <link rel="icon" type="image/png" href="../../../assets/new-icon.png">
       <link rel="stylesheet" href="../../../assets/css/new-style.css">
       <link rel="stylesheet" href="../../../assets/css/new-challenge.css">
       <link rel="stylesheet" href="../../../assets/css/buttons.css">
@@ -18,26 +19,72 @@
           </select>
       </div>
       <a class="filledblock" href="index.html">Git-it</a>
+      <div class="header-icons-overlay">
+        <img src="../../../assets/git-it.png" alt="Git-it Old" class="app-icon old-icon" />
+        <img src="../../../assets/new-icon.png" alt="Git-it New" class="app-icon new-icon" />
+      </div>
     </header>
 
     <div class="page-wrapper">
 
-      <div id="progress-cirlces-section" class="progress-circles border-group-container full-width">
-        <span class="border-group-left">완료된 챌린지:</span>
-        <span class="border-group-middle">
-          <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
-          <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
-          <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
-          <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
-          <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
-          <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
-          <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
-          <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
-          <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
-          <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
-          <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
-        </span>
-        <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
+      <div id="progress-cirlces-section" class="progress-container">
+        <div class="progress-header">
+          <h2>학습 진행 상황</h2>
+          <button class="clear-progress-btn js-clear-all-challenges" title="모든 진행 상황 지우기">
+            <span class="octicon octicon-trashcan"></span>
+            모두 지우기
+          </button>
+        </div>
+        
+        <div class="progress-grid">
+          <div class="progress-card basics-card">
+            <div class="card-header">
+              <div class="card-title">
+                <div class="card-icon basics-icon">📚</div>
+                <h3>Git 기초</h3>
+              </div>
+              <div class="progress-badge">
+                <span class="section-label">0/6</span>
+              </div>
+            </div>
+            <div class="progress-track">
+              <div class="progress-circles">
+                <a href="../challenges/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
+                <a href="../challenges/repository.html"><div class="progress-circle" title="Repository"></div></a>
+                <a href="../challenges/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
+                <a href="../challenges/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
+                <a href="../challenges/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
+                <a href="../challenges/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="progress-card advanced-card">
+            <div class="card-header">
+              <div class="card-title">
+                <div class="card-icon advanced-icon">🚀</div>
+                <h3>GitHub & 협업</h3>
+              </div>
+              <div class="progress-badge">
+                <span class="section-label">0/5</span>
+              </div>
+            </div>
+            <div class="progress-track">
+              <div class="progress-circles">
+                <a href="../challenges/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
+                <a href="../challenges/its_a_small_world.html"><div class="progress-circle" title="Small World"></div></a>
+                <a href="../challenges/pull_never_out_of_date.html"><div class="progress-circle" title="Pull Updates"></div></a>
+                <a href="../challenges/requesting_you_pull_please.html"><div class="progress-circle" title="Pull Requests"></div></a>
+                <a href="../challenges/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="start-buttons-section">
+        <a href="../challenges/get_git.html" class="start-btn basics-btn">기초 시작 →</a>
+        <a href="../challenges/branches_arent_just_for_birds.html" class="start-btn advanced-btn">고급 시작 →</a>
       </div>
 
       <div id="show-first-run">
@@ -48,57 +95,32 @@
           <h3>잠시</h3>
           <p>왼쪽 위 메뉴에서 간단히 원하는 언어를 선택하여 Git-it 을 <strong>전통적인 중국어</strong>, <strong>일본어</strong> 또는 <strong>한국어</strong>로 이용할 수 있습니다.</p>
 
-          <p>어플리케이션 메뉴의 'Window' 은 당신을 <strong><a href="../pages/dictionary.html">Dictionary</a></strong>, <strong><a href="../pages/resources.html">Resources</a></strong> and <strong><a href="../pages/about.html">About</a></strong> 페이지로 이동시켜 드릴것입니다.</p>
+          <p>애플리케이션 메뉴의 'Window' 옵션은 <strong><a
+                  href="dictionary.html">Dictionary</a></strong>, <strong><a
+                  href="resources.html">Resources</a></strong> 및 <strong><a
+                  href="about.html">About</a></strong> 페이지로 이동합니다.</p>
         </div>
 
-        <a href="../challenges/get_git.html" id="get-started"><button class="btn-primary">챌린지 하나를 시작해봅시다!</button></a>
+        <a href="../challenges/get_git.html" id="get-started">
+          <button class="btn-primary">첫 번째 챌린지 시작!</button>
+        </a>
       </div>
 
       <div id="show-wip-run">
-        <!-- <div class="progress-circles border-group-container full-width">
-          <span class="border-group-left">Challenges completed:</span>
-          <span class="border-group-middle">
-            <a href="challenges-kr/get_git.html"><div class="progress-circle" title="Get Git"></div></a>
-            <a href="challenges-kr/repository.html"><div class="progress-circle" title="Repository"></div></a>
-            <a href="challenges-kr/commit_to_it.html"><div class="progress-circle" title="Commit to it"></div></a>
-            <a href="challenges-kr/githubbin.html"><div class="progress-circle" title="GitHubbin"></div></a>
-            <a href="challenges-kr/remote_control.html"><div class="progress-circle" title="Remote Control"></div></a>
-            <a href="challenges-kr/forks_and_clones.html"><div class="progress-circle" title="Forks and Clones"></div></a>
-            <a href="challenges-kr/branches_arent_just_for_birds.html"><div class="progress-circle" title="Branches"></div></a>
-            <a href="challenges-kr/its_a_small_world.html"><div class="progress-circle" title="It's a small world"></div></a>
-            <a href="challenges-kr/pull_never_out_of_date.html"><div class="progress-circle" title="Pull, never out of date"></div></a>
-            <a href="challenges-kr/requesting_you_pull_please.html"><div class="progress-circle" title="Requesting you pull please"></div></a>
-            <a href="challenges-kr/merge_tada.html"><div class="progress-circle" title="Merge, tada!"></div></a>
-          </span>
-          <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
-        </div> -->
-        <h1>잘하고 계시네요!</h2>
-        <p>마지막에 하던 곳을 선택해서 계속 진행해주세요.</p>
-        <a id="left-off-from"><button class="btn-primary">마지막에 하던 곳부터 시작하세요!</button></a>
+        <h1>진행 중!</h2>
+            <p>진전을 이루고 있습니다. 계속해서 중단한 곳부터 다시 시작하세요.</p>
+            <a id="left-off-from">
+              <button class="btn-primary">중단한 곳부터 다시 시작!</button>
+            </a>
       </div>
 
       <div id="show-finished-run">
-        <!-- <div class="progress-circles border-group-container full-width">
-          <span class="border-group-left">Challenges completed:</span>
-          <span class="border-group-middle">
-            <a href="challenges-kr/get_git.html"><div class="progress-circle-completed" title="Get Git"></div></a>
-            <a href="challenges-kr/repository.html"><div class="progress-circle-completed" title="Repository"></div></a>
-            <a href="challenges-kr/commit_to_it.html"><div class="progress-circle-completed" title="Commit to it"></div></a>
-            <a href="challenges-kr/githubbin.html"><div class="progress-circle-completed" title="GitHubbin"></div></a>
-            <a href="challenges-kr/remote_control.html"><div class="progress-circle-completed" title="Remote Control"></div></a>
-            <a href="challenges-kr/forks_and_clones.html"><div class="progress-circle-completed" title="Forks and Clones"></div></a>
-            <a href="challenges-kr/branches_arent_just_for_birds.html"><div class="progress-circle-completed" title="Branches"></div></a>
-            <a href="challenges-kr/its_a_small_world.html"><div class="progress-circle-completed" title="It's a small world"></div></a>
-            <a href="challenges-kr/pull_never_out_of_date.html"><div class="progress-circle-completed" title="Pull, never out of date"></div></a>
-            <a href="challenges-kr/requesting_you_pull_please.html"><div class="progress-circle-completed" title="Requesting you pull please"></div></a>
-            <a href="challenges-kr/merge_tada.html"><div class="progress-circle-completed" title="Merge, tada!"></div></a>
-          </span>
-          <span class="border-group-right btn js-clear-all-challenges" title="Clear status"><span class="octicon octicon-trashcan"></span></span>
-        </div> -->
         <h1>축하합니다!</h2>
-        <p>모든 챌린지를 해내어 소셜 코딩을 위한 준비가 끝났습니다—그래서 다음으로 해아할 것은 무엇일까요?</p>
-        <a href="../pages/resources.html"><button class="btn-primary">초보자 프로젝트를 위한 아이디어</button></a>
-        <button class="btn-secondary js-clear-all-challenges">초기화 하고 다시 시작하기</button>
+            <p>챌린지를 완료하고 소셜 코딩을 할 준비가 되었습니다—다음은 무엇인가요?</p>
+            <a href="resources.html">
+              <button class="btn-primary">초보자 프로젝트 아이디어</button>
+            </a>
+            <button class="btn-secondary js-clear-all-challenges">지우고 다시 시작</button>
       </div>
 
     </div>
