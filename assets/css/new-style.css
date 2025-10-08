@@ -222,7 +222,7 @@ body, p, div, span, li, td, th {
 #select-directory:disabled,
 #select-directory[disabled] {
   background-color: rgba(51, 57, 53, 0.3) !important;
-  color: rgba(51, 57, 53, 0.6) !important;
+  color: rgb(51, 57, 53) !important;
   opacity: 0.7 !important;
   cursor: not-allowed !important;
 }
